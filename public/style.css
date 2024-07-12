@@ -1,0 +1,117 @@
+body {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative; /* Ensure position relative for absolute positioning of footer */
+}
+
+#chat-container {
+  background: #fff;
+  padding: 15px; /* Adjusted padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Adjusted width */
+  max-width: 90%; /* Ensures it doesn't exceed the viewport width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin bottom to create space with footer */
+}
+
+#chat-container.dark-mode {
+  background: #333;
+  color: #fff;
+}
+
+#chat-box {
+  width: 95%;
+  height: 250px; /* Adjusted height */
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+#chat-box.dark-mode {
+  background: #444;
+  border-color: #555;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.message.dark-mode {
+  background-color: #555;
+}
+
+.message p {
+  margin: 0;
+}
+
+#input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+#chat-input.dark-mode {
+  background: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+#send-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background: #2ecc71;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+  background: #27ae60;
+}
+
+#user-count {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.dark-mode #user-count {
+  color: #bbb;
+}
+
+footer {
+  /* background: #8092a3; */
+  color: #ecf0f1;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
