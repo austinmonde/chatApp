@@ -27,6 +27,19 @@ body {
   color: #fff;
 }
 
+.container1 {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgb(182, 182, 182);
+  padding: 15px; /* Adjusted padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 #chat-box {
   width: 95%;
   height: 250px; /* Adjusted height */
