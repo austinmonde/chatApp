@@ -14,7 +14,7 @@ body {
   padding: 15px; /* Adjusted padding */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 500px; /* Adjusted width */
+  width: 800px; /* Adjusted width */
   max-width: 90%; /* Ensures it doesn't exceed the viewport width */
   display: flex;
   flex-direction: column;
@@ -28,16 +28,56 @@ body {
 }
 
 .container1 {
-  padding: 8px;
-  border-radius: 4px;
-  background-color: rgb(182, 182, 182);
   padding: 15px; /* Adjusted padding */
   border-radius: 8px;
+  background-color: rgb(182, 182, 182);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  align-items: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Adjusted width */
+  margin: 0 auto;
+}
+
+.container1 h2 {
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.container1 input, 
+.container1 select {
+  width: 100%; /* Full width for input and select */
+  margin-bottom: 25px; /* Space between fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container1 button {
+  background: gray;
+  border-radius: 10%; /* Circular */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container1 button:hover {
+  background: #000000;
+}
+
+#room-info {
+  text-align: center;
+  margin-bottom: 15px; /* Space between room info and chat box */
+}
+
+#room-name {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #859bb1; /* Default color for light mode */
+}
+
+#room-name.dark-mode {
+  color: #ecf0f1; /* Color for dark mode */
 }
 
 #chat-box {
@@ -61,10 +101,12 @@ body {
   padding: 8px;
   border-radius: 4px;
   background-color: rgb(182, 182, 182);
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  white-space: pre-wrap; /* Ensure white spaces are preserved and long lines wrap */
 }
 
 .message.dark-mode {
-  background-color:gray;
+  background-color: rgb(182, 182, 182);;
 }
 
 .message p {
@@ -72,37 +114,56 @@ body {
 }
 
 #input-container {
-  display: flex;
-  width: 100%;
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center align items vertically */
+  width: 97%;
   margin-bottom: 10px;
+  border: none; /* Add border around the input container */
+  border-radius: 4px; /* Rounded corners for the container */
+  padding: 5px; /* Padding inside the container */
 }
 
 #chat-input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
+  flex: 1; /* Takes up all available space */
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0; /* Remove margin */
+  padding: 10px; /* Padding inside the input field */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for the input field */
+  background: none; /* Background color to match your design */
+  resize: none; /* Disable manual resizing */
+  overflow: hidden; /* Hide overflow */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 #chat-input.dark-mode {
-  background: #333;
+  background: none;
   color: #fff;
   border-color: #555;
 }
 
 #send-button {
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  background: #2ecc71;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Space between the input field and the button */
+  width: 40px; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Circular */
+  background: gray; /* Background color */
+  color: white; /* Icon color */
+  cursor: pointer; /* Pointer cursor */
+  display: flex; /* Flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 16px; /* Adjust icon size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#send-button i {
+  font-size: 18px; /* Adjust icon size */
 }
 
 #send-button:hover {
-  background: #27ae60;
+  background: rgb(0, 0, 0); /* Darker background on hover */
 }
 
 #user-count {
@@ -111,18 +172,38 @@ body {
   margin-top: 10px;
 }
 
+#toggle-dark-mode {
+  width: 5%; /* Full width */
+  margin-bottom: 10px; /* Space below */
+  padding: 10px; /* Padding inside */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 7px; /* Rounded corners */
+  background: gray; /* Background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#toggle-dark-mode:hover {
+  background: #000000; /* Darker background on hover */
+}
+
 .dark-mode #user-count {
   color: #bbb;
 }
 
 footer {
-  /* background: #8092a3; */
   color: #ecf0f1;
   padding: 10px;
   text-align: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom of the viewport */
+  left: 0; /* Stick to the left side of the viewport */
+  background-color: gray; /* Background color to match the page */
+  z-index: 1000; /* Ensure it stays on top */
 }
 
 footer p {

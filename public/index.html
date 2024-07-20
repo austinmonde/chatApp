@@ -3,48 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat App</title>
-  <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300"
-    />
+  <title>Connectify</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icons8-connection.gif" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
 </head>
 <body>
 
-    <form id="join-form" class="container1">
-        <h2>Join Chat</h2>
-        <input id="username-input" type="text" placeholder="Enter your username">
-        <select id="room-select">
-          <option value="">Select a room...</option>
-          <option value="General">General Chat</option>
-          <option value="TechSupport">Tech Support</option>
-          <option value="Marketing">Marketing Updates</option>
-        </select>
-        <button id="join-button" type="submit">Join Chat</button>
-      </form>
+  <form id="join-form" class="container1">
+    <h2>Join Chat</h2>
+    <input id="username-input" type="text" placeholder="Enter your username">
+    <select id="room-select">
+      <option value="">Select a room...</option>
+      <option value="General">General Chat</option>
+      <option value="TechSupport">Tech Support</option>
+      <option value="Marketing">Marketing Updates</option>
+    </select>
+    <button id="join-button" type="submit">Join Chat</button>
+  </form>
 
-      <div id="chat-container" class="container" style="display: none;">
-        <button id="toggle-dark-mode">Dark Mode</button>
-        <div id="room-list">
-          <h1>Available Rooms</h1>
-          <ul id="rooms">
-            <li><button onclick="joinRoom('General')">General Chat</button></li>
-            <li><button onclick="joinRoom('TechSupport')">Tech Support</button></li>
-            <li><button onclick="joinRoom('Marketing')">Marketing Updates</button></li>
-          </ul>
-        </div>
-        <div id="chat-box"></div>
-        <div id="input-container">
-          <input id="chat-input" type="text" placeholder="Type a message..." autocomplete="off">
-          <button id="send-button">Send</button>
-        </div>
-        <div id="user-count">Users connected: 0</div>
-      </div>
-    
-      <footer>
-        <p>&copy; 2024 Chat App. All rights reserved.</p>
-      </footer>
+  <div id="chat-container" class="container1" style="display: none;">
+    <i id="toggle-dark-mode" class="fas fa-moon"></i> <!-- Dark mode icon -->
+    <div id="room-info">
+      <h2 id="room-name">Room Name</h2>
+    </div>
+    <div id="chat-box"></div>
+    <div id="input-container">
+      <textarea id="chat-input" placeholder="Type a message..."></textarea>
+      <button id="send-button">
+        <i class="fas fa-paper-plane"></i> <!-- Font Awesome icon for the send button -->
+      </button>
+    </div>
+         
+    <div id="user-count">Users connected: 0</div>
+  </div>
+
+  <footer>
+    <p id="footer-text">&copy; <span id="year"></span> Chat App. All rights reserved.</p>
+  </footer>
+  
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="script.js"></script>
