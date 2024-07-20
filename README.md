@@ -13,7 +13,7 @@ Connectify is a real-time chat application designed for seamless communication a
 
 ## Demo
 
-You can view a live demo of Connectify [here](#) (replace with actual URL if available).
+You can view a live demo of Connectify [here](https://www.linkedin.com/posts/austinmonde_chatapp-webdevelopment-connectify-activity-7220498673359548416-X3hN?utm_source=share&utm_medium=member_desktop)
 
 ## Technologies Used
 
