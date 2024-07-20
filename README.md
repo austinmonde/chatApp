@@ -20,7 +20,7 @@ You can view a live demo of Connectify [here](#) (replace with actual URL if ava
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Socket.io
 - **Styling:** Font Awesome for icons, Google Fonts for typography
-- **Deployment:** GitHub Pages, Heroku, or similar (depending on your deployment strategy)
+- **Deployment:** GitHub Pages, Heroku
 
 ## Setup Instructions
 
