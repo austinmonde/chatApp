@@ -61,7 +61,9 @@ Click the moon/sun icon to switch between light and dark themes.
 ## Contributing
 Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
-# Contact
+## Contact Information
+
 For any questions or issues, please contact:
-Email: austinmonde7@gmail.com
-LinkedIn: [austinmonde](https://www.linkedin.com/in/austinmonde/)
+
+- **Email:** [austinmonde7@gmail.com](mailto:austinmonde7@gmail.com)
+- **LinkedIn:** [austinmonde](https://www.linkedin.com/in/austinmonde/)
