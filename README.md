@@ -45,23 +45,23 @@ nodemon index.js
 Open your browser and go to http://localhost:3000 to view the app.
 ```
 
-##Usage
+# Usage
 Join a Chat Room:
 
 Enter a username and select a chat room from the dropdown.
 Click the "Join Chat" button to enter the chat room.
 
-##Send Messages:
+## Send Messages:
 Type your message in the input field.
 Click the "Send" button or press Enter to send your message.
 
-##Toggle Dark Mode:
+## Toggle Dark Mode:
 Click the moon/sun icon to switch between light and dark themes.
 
-##Contributing
+## Contributing
 Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
-Contact
+# Contact
 For any questions or issues, please contact:
 Email: austinmonde7@gmail.com
 LinkedIn: [austinmonde](https://www.linkedin.com/in/austinmonde/)
