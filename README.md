@@ -38,3 +38,8 @@ cd connectify
 
 # Install Dependencies
 npm install
+
+#Run the Application
+nodemon index.js
+
+Open your browser and go to http://localhost:3000 to view the app.
