@@ -9,7 +9,7 @@ Connectify is a real-time chat application designed for seamless communication a
 - **Responsive Design:** Optimized for both desktop and mobile views.
 - **Dynamic Footer:** Automatically updates the copyright year.
 - **Customizable Input Field:** Adjusts its size dynamically based on message length.
-- **Favicon:** A unique icon to represent your chat application in the browser tab.
+- **Favicon:** A unique icon to represent the chat application in the browser tab.
 
 ## Demo
 
